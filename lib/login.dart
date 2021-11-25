@@ -46,11 +46,10 @@ class _LoginPageState extends State<LoginState> {
               width: 100,
               decoration: const BoxDecoration(
                   color: Colors.teal, shape: BoxShape.circle),
-              child: const Center(
-                child: Icon(
-                  Icons.person,
-                  size: 100,
-                  color: Colors.white,
+              child: Center(
+                child: Image.asset(
+                  'assets/images/logo_lingkaran.png',
+                    fit: BoxFit.cover
                 ),
               ),
             ),

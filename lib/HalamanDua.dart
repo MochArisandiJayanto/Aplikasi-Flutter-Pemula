@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugas_flutter_pemula/login.dart';
 
 class HalamanDua extends StatelessWidget {
   const HalamanDua(
@@ -15,7 +16,19 @@ class HalamanDua extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.cyan[900],
           title: Text(namaFilm),
+          actions: <Widget>[
+            IconButton(
+              onPressed: () {
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) {
+                      return LoginState();
+                    }));
+              },
+              icon: const Icon(Icons.person),
+            )
+          ],
         ),
         resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(

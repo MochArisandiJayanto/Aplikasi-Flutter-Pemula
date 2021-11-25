@@ -59,23 +59,25 @@ class HalamanUtama extends StatelessWidget {
   ];
 
   final List images = [
-    'assets/images/whoami.jpeg',
-    'assets/images/spiritedaway.jpeg',
-    'assets/images/parasite.jpeg',
-    'assets/images/nowyouseeme.jpeg',
-    'assets/images/deathnote.jpeg',
-    'assets/images/onepiece.jpeg',
-    'assets/images/residentevil.jpeg',
-    'assets/images/doraemon.jpeg',
-    'assets/images/ninjahatori.jpeg',
-    'assets/images/sinchan.jpeg'
+    'assets/images/banerwhoami.jpg',
+    'assets/images/banerspiritaedaway.jpg',
+    'assets/images/banerparasite.jpg',
+    'assets/images/banernowyouseeme.jpg',
+    'assets/images/banerdeathnote.jpg',
+    'assets/images/baneronepiece.png',
+    'assets/images/banerresidentevil.jpg',
+    'assets/images/banerdoraemon.jpg',
+    'assets/images/banerninjahatori.jpg',
+    'assets/images/banersinchan.jpg',
+
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Welcome to my application, $nickname'),
+        backgroundColor: Colors.cyan[900],
+        title: Text('Welcome , $nickname'),
         actions: <Widget>[
           IconButton(
             onPressed: () {
@@ -92,6 +94,7 @@ class HalamanUtama extends StatelessWidget {
         itemCount: film.length,
         itemBuilder: (context, index) {
           return Card(
+            color: Colors.white,
             elevation: 5,
             child: InkWell(
                 splashColor: Colors.grey,
