@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_flutter_pemula/utama.dart';
 
-class LoginState extends StatefulWidget {
+class LoginState extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
   final nicknameController = TextEditingController();
   late String nNickname;
