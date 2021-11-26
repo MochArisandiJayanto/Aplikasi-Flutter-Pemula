@@ -2,14 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:tugas_flutter_pemula/utama.dart';
 
 class LoginState extends StatefulWidget {
-  const LoginState({Key? key}) : super(key: key);
-  static String tag = 'login-state';
-
-  @override
-  State<LoginState> createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginState> {
   final _formKey = GlobalKey<FormState>();
   final nicknameController = TextEditingController();
   late String nNickname;
